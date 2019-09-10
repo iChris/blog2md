@@ -172,7 +172,7 @@ function wordpressImport(backupXmlFile, outputDir){
                         markdown = tds.turndown(content);
                         // console.log(markdown);
 
-                        fileHeader = `---\ntitle: '${title}'\ndate: ${published}\ndraft: false\n${tagString}---\n`;
+                        fileHeader = `---\ntitle: '${title}'\ndate: ${published}\ndraft: false\n${tagString}template: post\n---\n`;
                         fileContent = `${fileHeader}\n${markdown}`;
                         pmap.header = `${fileHeader}\n`;
 
